@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<nmaprun scanner="nmap" args="nmap -sV -O --open -T4 192.168.1.0/24" start="1704067200" version="7.94">
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.1" addrtype="ipv4"/>
+    <address addr="C0:FF:EE:00:01:01" addrtype="mac" vendor="Ubiquiti Networks"/>
+    <hostnames><hostname name="router.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="22"><state state="open"/><service name="ssh" product="OpenSSH" version="8.9"/></port>
+      <port protocol="tcp" portid="80"><state state="open"/><service name="http" product="nginx"/></port>
+      <port protocol="tcp" portid="443"><state state="open"/><service name="https" product="nginx"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.10" addrtype="ipv4"/>
+    <address addr="AA:BB:CC:DD:EE:01" addrtype="mac" vendor="Intel Corporate"/>
+    <hostnames><hostname name="desktop-pc.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="22"><state state="open"/><service name="ssh" product="OpenSSH" version="9.0"/></port>
+      <port protocol="tcp" portid="3389"><state state="open"/><service name="ms-wbt-server" product="Microsoft Terminal Services"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.20" addrtype="ipv4"/>
+    <address addr="E4:E7:49:AB:CD:01" addrtype="mac" vendor="Samsung Electronics"/>
+    <hostnames><hostname name="samsungtv.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="8080"><state state="open"/><service name="http-proxy" product="Samsung SmartTV"/></port>
+      <port protocol="tcp" portid="9197"><state state="open"/><service name="unknown"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.30" addrtype="ipv4"/>
+    <address addr="B8:27:EB:12:34:56" addrtype="mac" vendor="Raspberry Pi Foundation"/>
+    <hostnames><hostname name="rpi-sensor.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="1883"><state state="open"/><service name="mqtt" product="Mosquitto"/></port>
+      <port protocol="tcp" portid="8888"><state state="open"/><service name="http" product="Python HTTP"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.40" addrtype="ipv4"/>
+    <address addr="00:11:32:AA:BB:CC" addrtype="mac" vendor="Synology Incorporated"/>
+    <hostnames><hostname name="nas.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="5000"><state state="open"/><service name="http" product="Synology DSM"/></port>
+      <port protocol="tcp" portid="5001"><state state="open"/><service name="ssl/http" product="Synology DSM"/></port>
+      <port protocol="tcp" portid="445"><state state="open"/><service name="microsoft-ds" product="Samba smbd"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.50" addrtype="ipv4"/>
+    <address addr="F8:FF:C2:11:22:33" addrtype="mac" vendor="Apple Inc."/>
+    <hostnames><hostname name="iphone.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="62078"><state state="open"/><service name="iphone-sync"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.60" addrtype="ipv4"/>
+    <address addr="DC:A6:32:99:88:77" addrtype="mac" vendor="Raspberry Pi Ltd"/>
+    <hostnames><hostname name="smart-plug.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="80"><state state="open"/><service name="http" product="Tuya IoT"/></port>
+      <port protocol="tcp" portid="3128"><state state="open"/><service name="squid-http" product="Squid"/></port>
+    </ports>
+  </host>
+  <host starttime="1704067200" endtime="1704067260">
+    <status state="up" reason="echo-reply"/>
+    <address addr="192.168.1.70" addrtype="ipv4"/>
+    <address addr="74:DA:38:AA:BB:CC" addrtype="mac" vendor="Edimax Technology"/>
+    <hostnames><hostname name="ip-camera.local" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="554"><state state="open"/><service name="rtsp" product="Hikvision RTSP"/></port>
+      <port protocol="tcp" portid="8080"><state state="open"/><service name="http" product="GoAhead Web Server"/></port>
+      <port protocol="tcp" portid="1080"><state state="open"/><service name="socks5" product=""/></port>
+    </ports>
+  </host>
+</nmaprun>
